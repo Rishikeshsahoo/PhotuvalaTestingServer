@@ -4,6 +4,9 @@ const fileSchema= new mongoose.Schema({
     url:{
         type:String
     },
+    fileName:{
+        type:String
+    },
     sudoId:String
 })
 
