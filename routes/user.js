@@ -111,7 +111,7 @@ router.post("/removeedited",passport.authenticate("jwt",{session:false}),(req,re
   User.findOne({username:req.user.username})
   .then((user)=>{
     let is=false;
-    const data=user.edited.filter((it)=>{ return (it.id!==req.body.folder[0]._id)});
+    const data=user.edited.filter((it)=>{ return (it._id!=req.body.image._id)});
     user.edited=[...new Set(data)]
     user.save()
     .then(()=>{res.send({success:true})})

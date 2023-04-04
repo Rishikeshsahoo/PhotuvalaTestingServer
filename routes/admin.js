@@ -203,6 +203,7 @@ router.post(
   "/deleteimage",
   validateToken,
   (req, res) => {
+    console.log("came")
     User.findOne({ username: req.body.username })
       .then((user) => {
         user.files = user.files.filter((item) => {
