@@ -8,7 +8,7 @@ require("dotenv").config();
 
 
 const region = "ap-south-1"
-const bucketName = "photuvala-images-bucket"
+const bucketName = "photuvala-imagesbucket"
 const accessKeyId = process.env.AWS_ACCESS_KEY_ID
 const secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY
 
