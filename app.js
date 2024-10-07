@@ -20,6 +20,9 @@ require('./confg/passport')(passport)
 app.use('/users',userRouter)
 app.use('/admin',adminRouter)
 
+app.get("/testServer",(req,res)=>{
+    res.status(200).send("The server is working fine")
+})
 
 /* _______ Routes ______ */
 
