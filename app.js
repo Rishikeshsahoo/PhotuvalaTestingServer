@@ -21,7 +21,10 @@ app.use('/users',userRouter)
 app.use('/admin',adminRouter)
 
 app.get("/testServer",(req,res)=>{
-    res.status(200).send("The server is working fine")
+    res.status(200).json({
+        status:"success",
+        message:"this server is working fine"
+    })
 })
 
 /* _______ Routes ______ */
