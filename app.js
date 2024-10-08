@@ -23,7 +23,8 @@ app.use('/admin',adminRouter)
 app.get("/testServer",(req,res)=>{
     res.status(200).json({
         status:"success",
-        message:"this server is working fine"
+        message:"this server is working fine",
+        context: " is application is developed by Rishikesh Sahoo"
     })
 })
 
